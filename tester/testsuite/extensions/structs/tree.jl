@@ -17,11 +17,11 @@ boolean isElem(int x, IntSet s) {
 }
 
 Tree insertTree(int x,Tree t) {
-  if (t==(Tree)null) {
+  if (t==null) {
     Tree n1 = new Tree;
-    n1.left = (Tree)null;
+    n1.left = null;
     n1.val = x;
-    n1.right = (Tree)null;
+    n1.right = null;
     return n1;
   }
   else if (x < t.val) 
@@ -32,7 +32,7 @@ Tree insertTree(int x,Tree t) {
 }
 
 boolean isElemTree(int x,Tree t) {
-  if (t==(Tree)null)
+  if (t==null)
     return false;
   else if (x==t.val) 
     return true;
@@ -52,7 +52,7 @@ void printElem(int n, IntSet s) {
 
 int main () {
   IntSet s = new IntSet;
-  s.elems = (Tree)null;
+  s.elems = null;
 
   int x = 3;
   int i = 0;
