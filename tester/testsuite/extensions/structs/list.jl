@@ -22,7 +22,7 @@ List cons(int x, List xs) {
 }
 
 int length(List xs) {
-  if (xs==(List)null)
+  if (xs==null)
     return 0;
   else
     return 1 + length(xs.next);
@@ -30,14 +30,14 @@ int length(List xs) {
 
 List fromTo(int m, int n) {
   if (m>n)
-    return (List)null;
+    return null;
   else 
     return cons (m,fromTo (m+1,n));
 }
 
 int length2(List xs) {
   int res = 0;
-  while (xs != (List)null) {
+  while (xs != null) {
     res++;
     xs = xs.next;
   }
